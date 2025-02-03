@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 16px 201px;
+}
+
+.left__section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar img {
+  width: auto;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.nav__links a:hover {
+  color: var(--primary-color);
+}
+
+.login__button {
+  display: flex;
+  width: 125px;
+  height: 48px;
+  align-items: center;
+  background-color: #fff;
+  color: var(--primary-color);
+  padding: 12px 24px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  gap: 12px;
+}
+
+.login__button img {
+  width: 22px;
+  height: 22px;
+}
+
+.login__button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.login__button:hover img {
+  filter: brightness(0) invert(1); /* Turns icon white on hover */
+}
+
+.login__button:active {
+  background-color: var(--seconday-color);
+}
+
+.login__button:active img {
+  filter: brightness(0) invert(1);
+}
