@@ -5,8 +5,8 @@
 @import url("sections/header.css");
 @import url("sections/hero.css");
 @import url("sections/about.css");
-/* @import url("sections/nextstep.css");
-@import url("sections/register.css");
+@import url("sections/nextstep.css");
+/* @import url("sections/register.css");
 @import url("sections/footer.css"); */
 
 /* CSS variables for reusablity across all files (including above imported) */
@@ -50,6 +50,14 @@ a {
   align-items: center;
 }
 
+.button__general {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
 .button__style1 {
   align-items: center;
   color: var(--primary-color);
@@ -68,6 +76,19 @@ a {
   border-radius: 4px;
 }
 
+.title__text {
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  font-weight: 700px;
+  margin-bottom: 10px;
+}
+
+.subtitle__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  margin-bottom: 40px;
+}
 
 /* START: header media querie */
 @media screen and (max-width: 900px) {

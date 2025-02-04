@@ -12,17 +12,8 @@
   max-width: 50%;
 }
 
-.hero__content h3 {
-  font-size: 40px;
-  font-weight: 700px;
-  margin-bottom: 10px;
-}
-
-.hero__content p {
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  font-weight: 400px;
-  margin-bottom: 20px;
+.hero__content h3 p {
+  color: #fff;
 }
 
 .hero__button {
