@@ -3,9 +3,9 @@
 
 /* other css file imports */
 @import url("sections/header.css");
-/* @import url("sections/hero.css");
+@import url("sections/hero.css");
 @import url("sections/about.css");
-@import url("sections/nextstep.css");
+/* @import url("sections/nextstep.css");
 @import url("sections/register.css");
 @import url("sections/footer.css"); */
 
@@ -50,9 +50,23 @@ a {
   align-items: center;
 }
 
+.button__style1 {
+  align-items: center;
+  color: var(--primary-color);
+  background-color: #fff;
+  padding: 12px 24px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
 
-
-
+.button__style2 {
+  align-items: center;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 12px 24px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
 
 
 /* START: header media querie */

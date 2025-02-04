@@ -4,6 +4,7 @@
   justify-content: space-between;
   background-color: #fff;
   padding: 16px 201px;
+  font-family: 'Lato', sans-serif;
 }
 
 .left__section {
@@ -36,12 +37,7 @@
   display: flex;
   width: 125px;
   height: 48px;
-  align-items: center;
   background-color: #fff;
-  color: var(--primary-color);
-  padding: 12px 24px;
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
   text-decoration: none;
   font-size: 16px;
   gap: 12px;
