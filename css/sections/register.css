@@ -19,12 +19,6 @@
   min-width: 320px;
 }
 
-/* .register__steps h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-} */
-
 .step {
   display: flex;
   align-items: flex-start;
@@ -122,7 +116,7 @@
 }
 
 .input__group select {
-  color: #000; /* Default text color */
+  color: #000;
 }
 
 .input__group select:invalid {
@@ -132,10 +126,10 @@
 .input__group label button {
   display: flex;
   align-items: center;
-  gap: 8px; /* Adjust spacing between icon and text */
+  gap: 8px;
   color: grey;
-  background-color: #d3d3d3; /* Darker grey background */
-  border: none; /* Remove border */
+  background-color: #d3d3d3;
+  border: none;
   padding: 10px 15px;
   border-radius: 4px;
   cursor: pointer;
