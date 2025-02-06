@@ -1,0 +1,191 @@
+.register {
+  padding: 60px 10%;
+}
+
+.register__container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.register__steps {
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.register__steps, .register__form {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* .register__steps h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+} */
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.step__icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.step__content h4 {
+  font-size: 16px;
+  color: #000;
+  margin: 7px 0px 10px 0px;
+}
+
+.step__content p {
+  font-size: 16px;
+  color: #000;
+}
+
+/* Vertical Line */
+.step::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 110%;
+  background-color: #D1E5F8;
+  left: 15px;
+  top: 35px;
+}
+
+.step:last-child::before {
+  display: none;
+}
+
+/* Form Styling */
+.register__form {
+  background: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.register__form h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Two-Column Layout */
+.form__grid {
+  display: flex;
+  gap: 20px;
+}
+
+.form__column {
+  flex: 1;
+}
+
+.input__group {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.input__group img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.input__group input,
+.input__group select,
+.input__group textarea {
+  border: none;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+.input__group select {
+  color: #000; /* Default text color */
+}
+
+.input__group select:invalid {
+  color: grey;
+}
+
+.input__group label button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing between icon and text */
+  color: grey;
+  background-color: #d3d3d3; /* Darker grey background */
+  border: none; /* Remove border */
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input__group label button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Full-Width Inputs */
+.input__group textarea {
+  height: 80px;
+  resize: none;
+}
+
+.input__group input[type="file"] {
+  display: none;
+}
+
+.input__group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #007bff;
+}
+
+/* Register Button */
+.register__button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  font-size: 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.register__button img {
+  width: 18px;
+}
+
+.register__button:hover {
+  background-color: #0056b3;
+}

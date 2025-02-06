@@ -97,6 +97,133 @@
       </div>
     </div>
   </section>
+
+  <!-- Register Section -->
+  <section class="register">
+    <div class="register__container">
+  
+      <!-- Left Column: Steps -->
+      <div class="register__steps">
+        
+        <div class="step">
+          <div class="step__icon">
+            <img src="assets/icons/step-icons.png" />
+          </div>
+          <div class="step__content">
+            <h4>Sign Up and Choose Your Course</h4>
+            <p>Create your account quickly with just your email or social media login, then explore a wide range.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__icon">
+            <img src="assets/icons/step-icons.png" />
+          </div>
+          <div class="step__content">
+            <h4>Onboarding</h4>
+            <p>Create your account quickly with just your email or social media login, then explore a wide range.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__icon">
+            <img src="assets/icons/step-icons.png" />
+          </div>
+          <div class="step__content">
+            <h4>Start Learning</h4>
+            <p>Create your account quickly with just your email or social media login, then explore a wide range.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Column: Registration Form -->
+      <div class="register__form">
+        <h3>Register</h3>
+        <form>
+          <div class="form__grid">
+            <!-- Left Column -->
+            <div class="form__column">
+              <div class="input__group">
+                <img src="assets/icons/person.png" alt="User Icon">
+                <input type="text" placeholder="First Name" required>
+              </div>
+              <div class="input__group">
+                <img src="assets/icons/email.png" alt="Email Icon">
+                <input type="email" placeholder="Email Address" required>
+              </div>
+              <div class="input__group">
+                <img src="assets/icons/hat-graduation.png" alt="Dropdown Icon">
+                <select required>
+                  <option class="dropdown__label" value="" disabled selected>Choose Module</option>
+                  <option value="module1">Module 1</option>
+                  <option value="module2">Module 2</option>
+                </select>
+              </div>
+              <div class="input__group">
+                <img src="assets/icons/disabled.png" alt="Disabled Icon">
+                <select required>
+                  <option class="dropdown__label" value="" disabled selected>Disabled</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+  
+            <!-- Right Column -->
+            <div class="form__column">
+              <div class="input__group">
+                <img src="assets/icons/person.png" alt="User Icon">
+                <input type="text" placeholder="Last Name" required>
+              </div>
+              <div class="input__group">
+                <!-- <img src="assets/icons/location.png" alt="Location Icon"> -->
+                <input type="text" placeholder="Location" required>
+              </div>
+              <div class="input__group">
+                <img src="assets/icons/person.png" alt="Person Icon">
+                <select required>
+                  <option class="dropdown__label" value="" disabled selected>Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="input__group">
+                <img src="assets/icons/phone.png" alt="Phone Icon">
+                <input type="tel" placeholder="Phone Number" required>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Full-Width Rows -->
+          <div class="input__group">
+            <label for="profilePic">
+              <button>
+                <img src="assets/icons/image-upload.png" alt="Upload Icon">
+              Upload Image
+            </button>
+            </label>
+            <input type="file" id="profilePic" accept="image/*">
+          </div>
+  
+          <div class="input__group">
+            <img src="assets/icons/circle-dollar-sign.png" alt="Amount Icon">
+            <input type="number" placeholder="Amount" required>
+          </div>
+  
+          <div class="input__group">
+            <textarea placeholder="Description" required></textarea>
+          </div>
+  
+          <!-- Register Button -->
+          <button type="submit" class="register__button">
+            Register <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
+          </button>
+        </form>
+      </div>
+  
+    </div>
+  </section>
+  
   
 </body>
 </html>
