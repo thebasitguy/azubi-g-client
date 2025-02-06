@@ -45,6 +45,11 @@
   margin-bottom: 8px;
 }
 
+.footer__column
+.socials__link {
+  text-decoration: underline;
+}
+
 /* Bottom Section */
 .footer__bottom {
   margin-top: 20px;
