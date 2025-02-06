@@ -11,8 +11,8 @@
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
-  --playfair-display: "Playfair Display", serif;
-  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --Lato-font: 'Lato', sans-serif;
+  --Inter-font: 'Inter', sans-serif;
 
   --primary-color: #01589A;
   --secondary-color: #014273;
@@ -30,7 +30,7 @@
 body {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: var(--color-creamson);
+  background-color: var(--color-white);
 }
 
 a {

@@ -54,7 +54,7 @@
 }
 
 .login__button:hover img {
-  filter: brightness(0) invert(1); /* Turns icon white on hover */
+  filter: brightness(0) invert(1);
 }
 
 .login__button:active {
@@ -63,4 +63,162 @@
 
 .login__button:active img {
   filter: brightness(0) invert(1);
+}
+
+/* Login Modal Styling */
+.login__modal {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 200px;
+  background: white;
+  width: 320px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border: 1px solid #ddd;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+.login__content h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Google Login Button */
+.google__login {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.google__login img {
+  width: 18px;
+  height: 18px;
+}
+
+.google__login:hover {
+  background: #0056b3;
+}
+
+/* OR Separator */
+.or {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+
+/* Input Fields */
+.input__group {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.input__group img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.input__group input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Forgot Password */
+.forgot__password {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.forgot__password:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.modal__login {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.modal__login img {
+  width: 18px;
+}
+.google__login:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.modal__login:hover {
+  background: #0056b3;
+}
+
+/* Sign Up Text */
+.signup__text {
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup__text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup__text a:hover {
+  text-decoration: underline;
 }

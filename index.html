@@ -19,15 +19,56 @@
           <a href="#">Courses</a>
         </div>
       </div>
-
+  
       <!-- Right Section: Login Button -->
-      <a href="#" class="login__button button__style1">
+      <a href="#" class="login__button button__style1" id="openLogin">
         Login
         <img src="assets/icons/log-in-blue.png" alt="Login Icon">
       </a>
+  
+      <!-- Login Popup -->
+      <div class="login__modal" id="loginModal">
+        <div class="login__content">
+          <span class="close" id="closeLogin">&times;</span>
+          <h3>Login</h3>
+  
+          <!-- Google Login Button -->
+          <button class="google__login">
+            <img src="assets/icons/google-icon.png" alt="Google Icon">
+            Log in using Google
+          </button>
+  
+          <p class="or">or</p>
+  
+          <!-- Email & Password Fields -->
+          <div class="input__group">
+            <img src="assets/icons/email.png" alt="Email Icon">
+            <input type="email" placeholder="Email" required>
+          </div>
+  
+          <div class="input__group">
+            <img src="assets/icons/lock.png" alt="Password Icon">
+            <input type="password" placeholder="Password" required>
+          </div>
+  
+          <!-- Forgot Password -->
+          <a href="#" class="forgot__password">Forgot password?</a>
+  
+          <!-- Login Button -->
+          <button class="modal__login">
+            Login
+            <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
+          </button>
+  
+          <!-- Sign Up Link -->
+          <p class="signup__text">
+            Need to create an account? <a href="#">Sign up</a>
+          </p>
+        </div>
+      </div>
     </nav>
-  </header>
-
+  </header>  
+  
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero__content">
@@ -260,6 +301,8 @@
 
   </footer>
   
-  
+  <script src="js/script.js">
+
+  </script>
 </body>
 </html>
