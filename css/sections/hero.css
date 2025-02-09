@@ -16,6 +16,11 @@
   color: #fff;
 }
 
+.hero__content p {
+  font-weight: 300;
+  line-height: 32px;
+}
+
 .hero__button {
   display: inline-block;
   width: 137px;

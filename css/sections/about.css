@@ -3,8 +3,10 @@
   padding: 60px 10%;
 }
 
-.about h3 p {
-  color: #000;
+.about p {
+  /* color: #000; */
+  font-weight: 250;
+  line-height: 24px;
 }
 
 .about__cards {
@@ -50,6 +52,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #999;
+  font-weight: 600;
 
 }
 

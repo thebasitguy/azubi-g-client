@@ -15,7 +15,7 @@
       <div class="left__section">
         <img src="assets/logos/azubi-logo-1.png" alt="Logo" />
         <div class="nav__links">
-          <a href="#">Home</a>
+          <a href="#" class="active">Home</a>
           <a href="#">Courses</a>
         </div>
       </div>
@@ -30,42 +30,70 @@
       <div class="login__modal" id="loginModal">
         <div class="login__content">
           <span class="close" id="closeLogin">&times;</span>
-          <h3>Login</h3>
-  
-          <!-- Google Login Button -->
-          <button class="google__login">
-            <img src="assets/icons/google-icon.png" alt="Google Icon">
-            Log in using Google
-          </button>
-  
-          <p class="or">or</p>
-  
-          <!-- Email & Password Fields -->
-          <div class="input__group">
-            <img src="assets/icons/email.png" alt="Email Icon">
-            <input type="email" placeholder="Email" required>
+
+          <!-- Login Form -->
+          <div id="loginForm">
+            <h3>Login</h3>
+
+            <!-- Google Login Button -->
+            <button class="google__login">
+              <img src="assets/icons/google-icon.png" alt="Google Icon">
+              Log in using Google
+            </button>
+
+            <p class="or">or</p>
+
+            <!-- Email & Password Fields -->
+            <div class="input__group">
+              <img src="assets/icons/email.png" alt="Email Icon">
+              <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="input__group">
+              <img src="assets/icons/lock.png" alt="Password Icon">
+              <input type="password" placeholder="Password" required>
+            </div>
+
+            <!-- Forgot Password -->
+            <a href="#" class="forgot__password" id="openForgotPassword">Forgot password?</a>
+
+            <!-- Login Button -->
+            <button class="modal__login">
+              Login
+              <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
+            </button>
+
+            <!-- Sign Up Link -->
+            <p class="signup__text">
+              Need to create an account? <a href="#">Sign up</a>
+            </p>
           </div>
-  
-          <div class="input__group">
-            <img src="assets/icons/lock.png" alt="Password Icon">
-            <input type="password" placeholder="Password" required>
+
+          <!-- Forgot Password Form (Hidden by Default) -->
+          <div id="forgotPasswordForm" style="display: none;">
+            <h3>Forgot Password</h3>
+            <p class="forgotpassword__text">Enter your email address to reset your password.</p>
+
+            <!-- Email Entry Field -->
+            <div class="input__group">
+              <img src="assets/icons/email.png" alt="Email Icon">
+              <input type="email" placeholder="Email" required>
+            </div>
+
+            <!-- Reset Password Button -->
+            <button class="modal__login">
+              Reset Password
+              <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
+            </button>
+
+            <!-- Back to Login Link -->
+            <p class="signup__text">
+              Remember your password? <a href="#" id="backToLogin">Go back</a>
+            </p>
           </div>
-  
-          <!-- Forgot Password -->
-          <a href="#" class="forgot__password">Forgot password?</a>
-  
-          <!-- Login Button -->
-          <button class="modal__login">
-            Login
-            <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
-          </button>
-  
-          <!-- Sign Up Link -->
-          <p class="signup__text">
-            Need to create an account? <a href="#">Sign up</a>
-          </p>
         </div>
       </div>
+
     </nav>
   </header>  
   
@@ -117,7 +145,7 @@
   <!-- Next Step Section -->
   <section class="nextstep">
     <h3 class="title__text">What Will Be The Next Step?</h3>
-    <p class="subtitle__text">Discover our diverse stack of solutions, including software development, data science, and cloud tools. Sign up today and kickstart your journey!</p>
+    <p class="subtitle__text">Discover our diverse stack of solutions, including software development, data science, and cloud tools.<br/> Sign up today and kickstart your journey!</p>
 
     <div class="button__container">
       <div class="row">
@@ -152,7 +180,7 @@
           </div>
           <div class="step__content">
             <h4>Sign Up and Choose Your Course</h4>
-            <p>Create your account quickly with just your email or social media login, then explore a wide range.</p>
+            <p>Create your account quickly with<br/> just your email or social media<br/> login, then explore a wide range.</p>
           </div>
         </div>
 
@@ -162,7 +190,7 @@
           </div>
           <div class="step__content">
             <h4>Onboarding</h4>
-            <p>Create your account quickly with just your email or social media login, then explore a wide range.</p>
+            <p>Create your account quickly with<br/> just your email or social media<br/> login, then explore a wide range.</p>
           </div>
         </div>
 
@@ -172,7 +200,7 @@
           </div>
           <div class="step__content">
             <h4>Start Learning</h4>
-            <p>Create your account quickly with just your email or social media login, then explore a wide range.</p>
+            <p>Create your account quickly with<br/> just your email or social media<br/> login, then explore a wide range.</p>
           </div>
         </div>
       </div>

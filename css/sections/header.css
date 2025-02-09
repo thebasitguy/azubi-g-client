@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding: 16px 201px;
+  padding: 16px 125px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -30,6 +30,10 @@
 }
 
 .nav__links a:hover {
+  color: var(--primary-color);
+}
+
+.nav__links a.active {
   color: var(--primary-color);
 }
 
@@ -208,9 +212,11 @@
 }
 
 /* Sign Up Text */
-.signup__text {
+.signup__text,
+.forgotpassword__text {
   font-size: 14px;
   margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -222,3 +228,4 @@
 .signup__text a:hover {
   text-decoration: underline;
 }
+
