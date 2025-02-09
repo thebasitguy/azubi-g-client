@@ -4,7 +4,7 @@
 
 .register__container {
   display: flex;
-  gap: 80px;
+  /* gap: 80px; */
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -83,7 +83,7 @@
 /* Two-Column Layout */
 .form__grid {
   display: flex;
-  gap: 50px;
+  gap: 20px;
 }
 
 .form__column {
@@ -97,7 +97,7 @@
   padding: 10px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .input__group img {
