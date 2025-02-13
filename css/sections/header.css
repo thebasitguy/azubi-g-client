@@ -1,3 +1,4 @@
+/* General Styles */
 .navbar {
   display: flex;
   align-items: center;
@@ -29,27 +30,31 @@
   font-size: 16px;
 }
 
-.nav__links a:hover {
-  color: var(--primary-color);
-}
-
+.nav__links a:hover,
 .nav__links a.active {
   color: var(--primary-color);
 }
 
+/* Login Button */
 .login__button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 125px;
   height: 48px;
   background-color: #fff;
   text-decoration: none;
   font-size: 16px;
   gap: 12px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .login__button img {
   width: 22px;
   height: 22px;
+  transition: filter 0.3s;
 }
 
 .login__button:hover {
@@ -61,20 +66,14 @@
   filter: brightness(0) invert(1);
 }
 
-.login__button:active {
-  background-color: var(--seconday-color);
-}
-
-.login__button:active img {
-  filter: brightness(0) invert(1);
-}
-
-/* Login Modal Styling */
-.login__modal {
+/* Login Modal */
+.login__modal,
+.reset__modal,
+.signup__modal {
   display: none;
   position: absolute;
-  top: 80px;
-  right: 200px;
+  top: 70px;
+  right: 125px;
   background: white;
   width: 320px;
   padding: 20px;
@@ -85,12 +84,6 @@
   animation: slideDown 0.3s ease-in-out;
 }
 
-.login__content h3 {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Slide down animation */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -102,6 +95,13 @@
   }
 }
 
+.login__content h3, .signup__content h3, .or {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+
+
 /* Close Button */
 .close {
   position: absolute;
@@ -110,40 +110,6 @@
   font-size: 20px;
   cursor: pointer;
   color: #555;
-}
-
-/* Google Login Button */
-.google__login {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid var(--primary-color);
-  background: white;
-  color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.google__login img {
-  width: 18px;
-  height: 18px;
-}
-
-.google__login:hover {
-  background: #0056b3;
-}
-
-/* OR Separator */
-.or {
-  margin: 15px 0;
-  font-size: 14px;
-  color: #000;
-  text-align: center;
 }
 
 /* Input Fields */
@@ -169,26 +135,13 @@
   outline: none;
 }
 
-/* Forgot Password */
-.forgot__password {
-  display: block;
-  text-align: left;
-  font-size: 14px;
-  color: #007bff;
-  text-decoration: none;
-  margin-bottom: 15px;
-}
-
-.forgot__password:hover {
-  text-decoration: underline;
-}
-
-/* Login Button */
-.modal__login {
+/* Buttons */
+.google__login,
+.modal__login,
+.modal__reset {
   width: 100%;
   padding: 12px;
-  background: var(--primary-color);
-  color: white;
+  margin-top: 10px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -197,35 +150,36 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: background-color 0.3s;
 }
 
-.modal__login img {
-  width: 18px;
-}
-.google__login:hover {
-  background-color: var(--primary-color);
-  color: #fff;
+.google__login {
+  border: 1px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
 }
 
-.modal__login:hover {
+.modal__login,
+.modal__reset {
+  background: var(--primary-color);
+  color: white;
+}
+
+.google__login:hover,
+.modal__login:hover,
+.modal__reset:hover {
   background: #0056b3;
+  color: white;
 }
 
-/* Sign Up Text */
-.signup__text,
-.forgotpassword__text {
-  font-size: 14px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
+/* Links */
+.forgot__password,
 .signup__text a {
   color: #007bff;
   text-decoration: none;
 }
 
+.forgot__password:hover,
 .signup__text a:hover {
   text-decoration: underline;
 }
-

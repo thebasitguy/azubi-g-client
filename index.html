@@ -30,70 +30,147 @@
       <div class="login__modal" id="loginModal">
         <div class="login__content">
           <span class="close" id="closeLogin">&times;</span>
-
+  
           <!-- Login Form -->
-          <div id="loginForm">
+          <form id="loginForm">
             <h3>Login</h3>
-
+  
             <!-- Google Login Button -->
-            <button class="google__login">
+            <button type="button" class="google__login">
               <img src="assets/icons/google-icon.png" alt="Google Icon">
               Log in using Google
             </button>
-
+  
             <p class="or">or</p>
-
+  
             <!-- Email & Password Fields -->
             <div class="input__group">
               <img src="assets/icons/email.png" alt="Email Icon">
               <input type="email" placeholder="Email" required>
             </div>
-
+  
             <div class="input__group">
               <img src="assets/icons/lock.png" alt="Password Icon">
               <input type="password" placeholder="Password" required>
             </div>
-
+  
             <!-- Forgot Password -->
             <a href="#" class="forgot__password" id="openForgotPassword">Forgot password?</a>
-
+  
             <!-- Login Button -->
-            <button class="modal__login">
+            <button type="submit" class="modal__login">
               Login
               <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
             </button>
-
+  
             <!-- Sign Up Link -->
             <p class="signup__text">
-              Need to create an account? <a href="#">Sign up</a>
+              Need to create an account? <a href="#" id="openSignup">Sign up</a>
             </p>
-          </div>
-
+          </form>
+  
           <!-- Forgot Password Form (Hidden by Default) -->
-          <div id="forgotPasswordForm" style="display: none;">
+          <form id="forgotPasswordForm" style="display: none;">
             <h3>Forgot Password</h3>
             <p class="forgotpassword__text">Enter your email address to reset your password.</p>
-
+  
             <!-- Email Entry Field -->
             <div class="input__group">
               <img src="assets/icons/email.png" alt="Email Icon">
               <input type="email" placeholder="Email" required>
             </div>
-
+  
             <!-- Reset Password Button -->
-            <button class="modal__login">
+            <button type="submit" class="modal__reset" id="openReset">
               Reset Password
               <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
             </button>
-
+  
             <!-- Back to Login Link -->
             <p class="signup__text">
               Remember your password? <a href="#" id="backToLogin">Go back</a>
             </p>
-          </div>
+          </form>
         </div>
       </div>
-
+  
+      <!-- Sign Up Modal -->
+      <div class="signup__modal" id="signupModal">
+        <div class="signup__content">
+          <span class="close" id="closeSignup">&times;</span>
+          <h3>Sign Up</h3>
+  
+          <!-- Google Sign Up Button -->
+          <button type="button" class="google__login">
+            <img src="assets/icons/google-icon.png" alt="Google Icon">
+            Sign up using Google
+          </button>
+  
+          <p class="or">or</p>
+  
+          <!-- Email & Password Fields -->
+          <form>
+            <div class="input__group">
+              <img src="assets/icons/email.png" alt="Email Icon">
+              <input type="email" placeholder="Email" required>
+            </div>
+  
+            <div class="input__group">
+              <img src="assets/icons/lock.png" alt="Password Icon">
+              <input type="password" placeholder="Password" required>
+            </div>
+  
+            <div class="input__group">
+              <img src="assets/icons/lock.png" alt="Password Icon">
+              <input type="password" placeholder="Confirm Password" required>
+            </div>
+  
+            <!-- Register Button -->
+            <button type="submit" class="modal__login">
+              Register
+              <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
+            </button>
+          </form>
+  
+          <!-- Login Link -->
+          <p class="signup__text">
+            Already have an account? <a href="#" id="backToLoginFromSignup">Log in</a>
+          </p>
+        </div>
+      </div>
+  
+      <!-- Reset Password Modal -->
+      <div class="reset__modal" id="resetModal">
+        <div class="reset__content">
+          <span class="close" id="closeReset">&times;</span>
+          <h3>Reset Password</h3>
+          <p>Create a new password and get started</p>
+  
+          <!-- Password Input Fields -->
+          <form>
+            <div class="input__group">
+              <img src="assets/icons/lock.png" alt="Lock Icon">
+              <input type="password" placeholder="Enter Password" required>
+            </div>
+  
+            <div class="input__group">
+              <img src="assets/icons/lock.png" alt="Lock Icon">
+              <input type="password" placeholder="Confirm Password" required>
+            </div>
+  
+            <!-- Reset Password Button -->
+            <button type="submit" class="modal__reset">
+              Reset Password
+              <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
+            </button>
+          </form>
+  
+          <!-- Sign Up Link -->
+          <p class="signup__text">
+            Need to create an account? <a href="#" id="openSignupFromReset">Sign up</a>
+          </p>
+        </div>
+      </div>
     </nav>
   </header>  
   
