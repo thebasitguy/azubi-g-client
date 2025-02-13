@@ -20,11 +20,27 @@
         </div>
       </div>
   
-      <!-- Right Section: Login Button -->
-      <a href="#" class="login__button button__style1" id="openLogin">
-        Login
-        <img src="assets/icons/log-in-blue.png" alt="Login Icon">
-      </a>
+      <!-- Right Section: Login Button or Profile Dropdown -->
+      <div class="right__section">
+        <!-- Login Button (Visible by Default) -->
+        <a href="#" class="login__button button__style1" id="openLogin">
+          Login
+          <img src="assets/icons/log-in-blue.png" alt="Login Icon">
+        </a>
+  
+        <!-- Profile Dropdown (Hidden by Default) -->
+        <div class="profile__dropdown" id="profileDropdown" style="display: none;">
+          <div class="profile__info" id="profileInfo">
+            <img src="assets/icons/profile-picture.png" alt="Profile Picture" class="profile__pic">
+            <span class="profile__name">John Doe</span>
+            <img src="assets/icons/chevron-down.png" alt="Dropdown Icon" class="dropdown__icon">
+          </div>
+          <div class="dropdown__menu">
+            <a href="#"><img src="assets/icons/hat-graduation.png" alt="Profile Picture" class="profile__pic">Portal</a>
+            <a href="#"><img src="assets/icons/log-in.png" alt="Profile Picture" class="profile__pic">Logout</a>
+          </div>
+        </div>
+      </div>
   
       <!-- Login Popup -->
       <div class="login__modal" id="loginModal">
@@ -58,7 +74,7 @@
             <a href="#" class="forgot__password" id="openForgotPassword">Forgot password?</a>
   
             <!-- Login Button -->
-            <button type="submit" class="modal__login">
+            <button type="submit" class="modal__login" id="modalLoginButton">
               Login
               <img src="assets/icons/chevron-right.png" alt="Chevron Icon">
             </button>

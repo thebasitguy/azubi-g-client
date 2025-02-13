@@ -20,26 +20,27 @@ const closeSignup = document.getElementById("closeSignup");
 const backToLoginFromSignup = document.getElementById("backToLoginFromSignup");
 const openSignupFromReset = document.getElementById("openSignupFromReset");
 
+const profileDropdown = document.getElementById("profileDropdown");
+const profileInfo = document.getElementById("profileInfo");
+
+const modalLoginButton = document.getElementById("modalLoginButton");
+
 // Open login modal
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
-  loginModal.style.display = "block";
+  openModal(loginModal);
   loginForm.style.display = "block";
   forgotPasswordForm.style.display = "none";
-  signupModal.style.display = "none";
 });
 
 // Close login modal
-closeLogin.addEventListener("click", () => {
-  loginModal.style.display = "none";
-});
+closeLogin.addEventListener("click", () => closeModal(loginModal));
 
 // Open Forgot Password Form
 openForgotPassword.addEventListener("click", (e) => {
   e.preventDefault();
   loginForm.style.display = "none";
   forgotPasswordForm.style.display = "block";
-  signupModal.style.display = "none";
 });
 
 // Back to Login
@@ -47,58 +48,77 @@ backToLogin.addEventListener("click", (e) => {
   e.preventDefault();
   loginForm.style.display = "block";
   forgotPasswordForm.style.display = "none";
-  signupModal.style.display = "none";
 });
 
 // Open Sign Up Modal
 openSignup.addEventListener("click", (e) => {
   e.preventDefault();
-  loginModal.style.display = "none";
-  signupModal.style.display = "block";
+  closeModal(loginModal);
+  openModal(signupModal);
 });
 
 // Close Sign Up Modal
-closeSignup.addEventListener("click", () => {
-  signupModal.style.display = "none";
-});
+closeSignup.addEventListener("click", () => closeModal(signupModal));
 
 // Back to Login from Sign Up
 backToLoginFromSignup.addEventListener("click", (e) => {
   e.preventDefault();
-  signupModal.style.display = "none";
-  loginModal.style.display = "block";
+  closeModal(signupModal);
+  openModal(loginModal);
 });
 
 // Open Sign Up from Reset Modal
 openSignupFromReset.addEventListener("click", (e) => {
   e.preventDefault();
-  resetModal.style.display = "none";
-  signupModal.style.display = "block";
+  closeModal(resetModal);
+  openModal(signupModal);
 });
 
 // Open Reset Password Modal
 openResetButton.addEventListener("click", (e) => {
   e.preventDefault();
-  forgotPasswordForm.style.display = "none";
-  resetModal.style.display = "block";
+  closeModal(forgotPasswordForm);
+  openModal(resetModal);
 });
 
 // Close Reset Password Modal
-closeReset.addEventListener("click", () => {
-  resetModal.style.display = "none";
+closeReset.addEventListener("click", () => closeModal(resetModal));
+
+// Handle Login Button Click in Modal
+modalLoginButton.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  // Simulate login success
+  const isLoggedIn = true; // Replace with actual login logic
+
+  if (isLoggedIn) {
+    closeModal(loginModal);
+    loginButton.style.display = "none";
+    profileDropdown.style.display = "flex";
+  } else {
+    alert("Login failed. Please check your credentials.");
+  }
 });
 
-// Close modals when clicking outside
+// Toggle Dropdown Menu
+profileInfo.addEventListener("click", () => {
+  const dropdownMenu = document.querySelector(".dropdown__menu");
+  dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+});
+
+// Close Dropdown Menu When Clicking Outside
 document.addEventListener("click", (e) => {
-  if (!loginModal.contains(e.target) && e.target !== loginButton) {
-    loginModal.style.display = "none";
-  }
-
-  if (!signupModal.contains(e.target) && e.target !== openSignup) {
-    signupModal.style.display = "none";
-  }
-
-  if (!resetModal.contains(e.target) && e.target !== openResetButton) {
-    resetModal.style.display = "none";
+  if (!profileDropdown.contains(e.target)) {
+    const dropdownMenu = document.querySelector(".dropdown__menu");
+    dropdownMenu.style.display = "none";
   }
 });
+
+// Helper functions
+function openModal(modal) {
+  modal.style.display = "block";
+}
+
+function closeModal(modal) {
+  modal.style.display = "none";
+}
