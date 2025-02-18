@@ -1,0 +1,80 @@
+.learner__hero {
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  font-family: 'Lato', sans-serif;
+  color: white;
+  padding: 50px 10%;
+
+  display: block;
+  height: 159px;
+}
+
+.learner__hero-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.learner__hero-content img {
+  width: 32px;
+  padding-bottom: 10px;
+}
+
+.mini__navbar {
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 16px 75px;
+  margin-top: auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.mini__navbar a:hover,
+.mini__navbar a.active {
+  font-weight: 700;
+}
+
+
+/*Table Section*/
+
+
+/* Table Container */
+.table-container {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 30px 62px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #fff;
+  color: #999;
+}
+
+th, td {
+  padding: 5px 16px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody {
+  color: #000;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}

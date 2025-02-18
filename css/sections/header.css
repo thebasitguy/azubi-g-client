@@ -245,7 +245,7 @@
 }
 
 .dropdown__menu a:hover {
-  background: #f0f0f0;
+  color: var(--primary-color);
 }
 
 .profile__dropdown:hover .dropdown__menu {

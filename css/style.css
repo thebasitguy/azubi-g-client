@@ -9,6 +9,9 @@
 @import url("sections/register.css");
 @import url("sections/footer.css");
 
+/*Learner Dashboard*/
+@import url("sections/learner-dashboard.css");
+
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
   --Lato-font: 'Lato', sans-serif;

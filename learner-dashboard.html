@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/icons/Azubi-Logo.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Learner Dashboard</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- Left Section: Logo and Links -->
+      <div class="left__section">
+        <img src="assets/logos/azubi-logo-1.png" alt="Logo" />
+      </div>
+
+      <!-- Right Section: Profile Dropdown -->
+       <div class="right__section">
+        <div class="profile__dropdown" id="profileDropdown">
+          <div class="profile__info" id="profileInfo">
+            <img src="assets/icons/profile-picture.png" alt="Profile Picture" class="profile__pic">
+            <span class="profile__name">John Doe</span>
+            <img src="assets/icons/Chevron Down.png" alt="Dropdown Icon" class="dropdown__icon">
+          </div>
+          <div class="dropdown__menu">
+            <a href="#"><img src="assets/icons/hat-graduation.png" alt="Profile Picture" class="profile__pic">Portal</a>
+            <a href="#"><img src="assets/icons/log-in.png" alt="Profile Picture" class="profile__pic">Logout</a>
+          </div>
+        </div>
+       </div>
+    </nav>
+  </header>
+
+  <section class="learner__hero">
+    <div class="learner__hero-content">
+      <img src="assets/icons/dashboard-icon.png" alt="Dashboard Icon">
+      <h3 class="title__text">Dashboard</h3>
+    </div>
+
+    <div class="mini__navbar">
+      <a href="#" class="active">Application</a>
+      <a href="#">Profile</a>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Program</th>
+            <th>Date Registered</th>
+            <th>Status</th>
+            <th>Paid</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data Science</td>
+            <td>2024/11/16</td>
+            <td>Registered</td>
+            <td>$150.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+  
+</body>
+</html>
