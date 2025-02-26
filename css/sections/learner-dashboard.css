@@ -1,3 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .learner__hero {
   align-items: center;
   justify-content: space-between;
@@ -50,7 +61,8 @@
 }
 
 /* Table Styles */
-table {
+.table__main {
+  display: block;
   width: 100%;
   align-items: center;
   padding-bottom: 30px;
@@ -71,10 +83,61 @@ th {
   font-weight: bold;
 }
 
+.t_column2,
+.t_column3,
+.t_column4 {
+  border-left: 1px solid #ddd;
+}
+
 tbody {
   color: #000;
 }
 
 tbody tr:last-child {
   border-bottom: none;
+}
+
+.table__below {
+  padding-top: 30px;
+}
+
+
+.two__buttons {
+  margin-left: 76px;
+}
+
+.home__button,
+.startnew__button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* display: inline; */
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.home__button {
+  background-color: #E6E6E6;
+  color: #404040;
+  width: 168px;
+  height: 48px;
+}
+
+.startnew__button {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* Footer styles */
+.footer {
+  /* background-color: var(--primary-color);
+  font-family: 'Inter', sans-serif;
+  color: white;
+  padding: 40px 20px; */
+  margin-top: auto; /* Push the footer to the bottom */
 }

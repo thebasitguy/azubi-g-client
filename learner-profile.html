@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/icons/Azubi-Logo.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Learner Dashboard</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- Left Section: Logo and Links -->
+      <div class="left__section">
+        <img src="assets/logos/azubi-logo-1.png" alt="Logo" />
+      </div>
+
+      <!-- Right Section: Profile Dropdown -->
+       <div class="right__section">
+        <div class="profile__dropdown" id="profileDropdown">
+          <div class="profile__info" id="profileInfo">
+            <img src="assets/icons/profile-picture.png" alt="Profile Picture" class="profile__pic">
+            <span class="profile__name">John Doe</span>
+            <img src="assets/icons/Chevron Down.png" alt="Dropdown Icon" class="dropdown__icon">
+          </div>
+          <div class="dropdown__menu">
+            <a href="#"><img src="assets/icons/hat-graduation.png" alt="Profile Picture" class="profile__pic">Portal</a>
+            <a href="#"><img src="assets/icons/log-in.png" alt="Profile Picture" class="profile__pic">Logout</a>
+          </div>
+        </div>
+       </div>
+    </nav>
+  </header>
+
+  <section class="learner__hero">
+    <div class="learner__hero-content">
+      <img src="assets/icons/dashboard-icon.png" alt="Dashboard Icon">
+      <h3 class="title__text">Dashboard</h3>
+    </div>
+
+    <div class="mini__navbar">
+      <a href="#">Application</a>
+      <a href="#" class="active">Profile</a>
+    </div>
+
+    <div class="table-container">
+      <table class="table__main">
+        <thead>
+          <tr>
+            <th class="t_column1">John Doe</th>
+            <th class="t_column2">Location</th>
+            <th class="t_column3">Gender</th>
+            <th class="t_column4">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="t_column1">johndoe@gmail.com</td>
+            <td class="t_column2">Kumasi</td>
+            <td class="t_column3">Male</td>
+            <td class="t_column4">+23341002402</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table__below">
+        <tbody class="button__container">
+          <tr class="row">
+            <td>
+              <div class="input__group">
+                <img src="assets/icons/lock.png" alt="Password Icon">
+                <input type="password" placeholder="Old Password" required>
+              </div>
+            </td>
+            <td>
+              <div class="input__group">
+                <img src="assets/icons/lock.png" alt="Password Icon">
+                <input type="password" placeholder="New Password" required>
+              </div>
+            </td>
+            <td>
+              <a href="#">Update</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="two__buttons">
+      <button class="home__button">
+      <img src="assets/icons/left-chevron.png" alt="Chevron Icon">Back
+      </button>
+      <button class="startnew__button">
+        Edit<img src="assets/icons/chevron-right-white.png" alt="Chevron Icon">
+      </button>
+    </div>
+
+  </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__content">
+        <!-- Left Column: Logo -->
+        <div class="footer__left">
+          <img src="assets/logos/azubi-logo.png" alt="Footer Logo">
+        </div>
+    
+        <!-- Right Section: Three Columns -->
+        <div class="footer__right">
+          <div class="footer__column">
+            <h4>Menu</h4>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+          </div>
+          <div class="footer__column">
+            <h4>Contact</h4>
+            <p>+23341002000</p>
+            <p>New Reiss ,Ghana, Accra</p>
+          </div>
+          <div class="footer__column">
+            <h4>Social</h4>
+            <a href="#" class="socials__link">LinkedIn</a>
+            <a href="#" class="socials__link">Facebook</a>
+          </div>
+        </div>
+  
+        <!-- Divider and Bottom Section -->
+        <div class="footer__bottom">
+          <p>&copy; copyright 2025 - G-Client. All rights reserved.</p>
+          <a href="#" class="back__to__top">
+            Back to top <img src="assets/icons/arrow-up.png" alt="Arrow Up">
+          </a>
+        </div>
+      </div>
+  
+    </footer>
+
+
+  <script src="js/script.js">
+
+  </script>
+</body>
+</html>
